@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mines</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="controlls">
+        <label>
+            Mines:
+            <input id="minesNumber" type="number" value="35" min="3" max="64" />
+        </label><br>
+        <label>
+            Size x:
+            <input id="areaSizeX" type="number" value="29" min="2" onchange="updateLimits()" />
+        </label><br>
+        <label>
+            Size y:
+            <input id="areaSizeY" type="number" value="14" min="2" onchange="updateLimits()" />
+        </label><br>
+        <input onclick="startGame()" type="button" value="Start" />
+    </div>
+
+    <div id="area"></div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
